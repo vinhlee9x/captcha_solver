@@ -1,9 +1,13 @@
 import sys
+import os
 import torch
 from torchvision import transforms
 from PIL import Image, ImageFilter, ImageOps
 from model import CRNN
-from config import DEVICE, INT2CHAR, NUM_CLASSES, MODEL_PATH
+from config import DEVICE, INT2CHAR, NUM_CLASSES
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "captcha_crnn_model.pth")
 
 transform = transforms.Compose([
     transforms.Resize((32, 128)),
