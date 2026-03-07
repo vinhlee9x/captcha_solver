@@ -1,0 +1,8 @@
+numpy<2
+torch
+torchvision
+captcha
+pillow
+fastapi
+uvicorn
+python-multipart
