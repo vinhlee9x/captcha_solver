@@ -6,3 +6,5 @@ pillow
 fastapi
 uvicorn
 python-multipart
+opencv-python-headless
+requests
